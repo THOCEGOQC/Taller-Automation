@@ -17,11 +17,12 @@ public class TallerStep {
 	@Step
 	public void enterTheUserAndPassword(String user, String password) {
 		tallerPageObject.insertUSer(user);
+		tallerPageObject.insertPassword(password);
 	}
 	
 	@Step
 	public void pressTheLoginButton() {
-		
+		tallerPageObject.clicButton();
 	}
 	
 	@Step

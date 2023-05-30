@@ -19,7 +19,7 @@ public class TallerDefinitions {
 		tallerStep.startPage();
 	}
 	
-	@And("I enter the user \"([^\"]*)\"$ and the password \"([^\"]*)\"$")
+	@And("I enter the user \"([^\"]*)\" and the password \"([^\"]*)\"")
 	public void enterTheUserAndPassword(String user, String password) {
 		tallerStep.enterTheUserAndPassword(user, password);
 	}

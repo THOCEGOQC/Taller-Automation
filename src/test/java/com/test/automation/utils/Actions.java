@@ -1,5 +1,7 @@
 package com.test.automation.utils;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,6 +18,10 @@ public class Actions extends PageObject{
 		
 		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
+	}
+	
+	public void waitImplicity(int tiempo) {
+		getDriver().manage().timeouts().implicitlyWait(tiempo,TimeUnit.SECONDS);
 	}
 	
 }

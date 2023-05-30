@@ -13,13 +13,31 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class TallerPageObject extends PageObject {
 
 	Actions actions;
-	WebElement el =null;
-	
+	WebElement el = null;
+
 	@FindBy(id = "usuario")
 	public static WebElement txtUser;
-	
+
+	@FindBy(id = "password")
+	public static WebElement txtPassword;
+
+	@FindBy(xpath = "//button[text()='Ingresar']")
+	public static WebElement buttonIngresar;
+
 	public void insertUSer(String user) {
-		actions.waitObject (txtUser, 10);
+		actions.waitObject(txtUser, 10);
 		txtUser.sendKeys(user);
+		actions.waitImplicity(10000);
 	}
+
+	public void insertPassword(String password) {
+		txtPassword.sendKeys(password);
+
+	}
+
+	public void clicButton() {
+		buttonIngresar.click();
+
+	}
+
 }

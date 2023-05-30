@@ -13,7 +13,7 @@ Feature: I am Testing the inventory billiard test
 
 
     Examples: 
-      | user  	| password 			| 
-      | Brayan 	| Prueba1234 		| 
-      | Jorge 	| Jorge2023*		|
+      |user|password| 
+      |"Brayan"|"Prueba1234"| 
+      |"Jorge"|"Jorge2023*"|
 
