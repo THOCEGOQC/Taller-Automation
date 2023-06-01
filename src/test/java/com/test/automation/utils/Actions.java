@@ -24,4 +24,7 @@ public class Actions extends PageObject{
 		getDriver().manage().timeouts().implicitlyWait(tiempo,TimeUnit.SECONDS);
 	}
 	
+	public void quitDriver() {
+		getDriver().quit();
+	}
 }

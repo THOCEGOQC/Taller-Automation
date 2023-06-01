@@ -9,11 +9,11 @@ Feature: I am Testing the inventory billiard test
     Given Start inventory page
     And I enter the user <user> and the password <password>
     When I click the login button
-    Then I validate the succesful login
-
+    Then I validate the succesful login with user <user>
+		And I validate the succesful campus <campus>
 
     Examples: 
-      |user|password| 
-      |"Brayan"|"Prueba1234"| 
-      |"Jorge"|"Jorge2023*"|
+      |user			|password				|campus		| 
+      |"Roy"		|"Prueba1234*"	|"Prueba"	|
+      |"Thocego"|"Prueba1234"		|"Prueba"	|
 

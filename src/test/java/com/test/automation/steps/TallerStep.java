@@ -26,8 +26,15 @@ public class TallerStep {
 	}
 	
 	@Step
-	public void validateTheSuccesfulLogin() {
+	public void validateTheSuccesfulLogin(String user) {
+		tallerPageObject.validateUser(user);
+	}
+	
+	@Step
+	public void validateTheSuccesfulCampus(String campus) {
+		tallerPageObject.validateCampus(campus);
 		
 	}
 	
+		
 }

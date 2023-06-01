@@ -29,9 +29,14 @@ public class TallerDefinitions {
 		tallerStep.pressTheLoginButton();
 	}
 	
-	@Then("I validate the succesful login")
-	public void validateTheSuccesfulLogin() {
-		tallerStep.validateTheSuccesfulLogin();
+	@Then("I validate the succesful login with user \"([^\"]*)\"")
+	public void validateTheSuccesfulLogin(String user) {
+		tallerStep.validateTheSuccesfulLogin(user);
+	}
+	
+	@And("I validate the succesful campus \"([^\"]*)\"")
+	public void validateTheSuccesfulCampus(String campus) {
+		tallerStep.validateTheSuccesfulCampus(campus);
 	}
 	
 }
